@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     'channels',
+    'message',
 ]
 
 MIDDLEWARE = [
@@ -143,3 +144,5 @@ CHANNEL_LAYERS = {
         # }
     }
 }
+
+ASGI_APPLICATION = 'chat.asgi.application'
