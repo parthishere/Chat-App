@@ -12,7 +12,8 @@
         <link rel="stylesheet" href="{% static 'css/messages.css' %}">
 
     </head>
-	<!--Coded With Love By Mutiullah Samim-->
+	
+
 	<body>
     {% if user.is_authenticated %}
         <h1 style="text-align: end; padding-right: 10px">Logged in as : {{ user.username }}</h1>
@@ -46,7 +47,7 @@
                                                 <span>{{ thread.first_person.username }}</span>
                                             {% endif %}
 
-{#                                            <p>Kalid is online</p>#}
+{#                                            <p>tp is online</p>#}
                                         </div>
                                     </div>
                                 </li>
@@ -97,7 +98,7 @@
                                 </div>
 
                                 <div class="card-body msg_card_body">
-                                    <!------- messages ------->
+                                    <!-- message-->
                                     {% for chat in thread.chatmessage_thread.all %}
                                         {% if chat.user == user %}
                                             <div class="d-flex mb-4 replied">
@@ -123,7 +124,7 @@
                                     {% endfor %}
 
 
-                                    <!------- messages ------->
+                                    <!-- messages -->
                                 </div>
 
 					        </div>
