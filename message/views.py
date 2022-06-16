@@ -11,4 +11,4 @@ def messages_page(request):
     context = {
         'Threads': threads
     }
-    return render(request, 'messages.html', context)
+    return render(request, 'message/messages.html', context)
